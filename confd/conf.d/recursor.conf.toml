@@ -2,6 +2,7 @@
 src  = "recursor.conf.tmpl"
 dest = "/etc/pdns-recursor/recursor.conf"
 keys = [
+  "/pdns/recursor/allowfrom",
   "/pdns/recursor/localaddress",
   "/pdns/recursor/zones"
 ]
