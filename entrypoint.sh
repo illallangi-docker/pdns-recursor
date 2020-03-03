@@ -27,6 +27,5 @@ if [[ ! -x $PDNS_RECURSOR ]]; then
   exit 1
 fi
 
-cat ${PDNS_RECURSOR_CONFIG}
-echo ${*:-${PDNS_RECURSOR} ${PDNS_RECURSOR_CONFIG}}
-exec ${*:-${PDNS_RECURSOR} ${PDNS_RECURSOR_CONFIG}}
+echo ${*:-${PDNS_RECURSOR}}
+exec ${*:-${PDNS_RECURSOR}}
