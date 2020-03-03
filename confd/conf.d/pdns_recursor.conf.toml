@@ -1,0 +1,4 @@
+[template]
+src  = "recursor.conf.tmpl"
+dest = "/etc/pdns-recursor/recursor.conf"
+keys = []
