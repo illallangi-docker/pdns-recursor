@@ -9,6 +9,7 @@ dnssec=off
 # forward-zones Zones for which we forward queries, comma separated domain=ip pairs
 # forward-zones=
 
+non-local-bind=yes
 local-address={{ getv "/pdns/recursor/localaddress" "0.0.0.0"}}
 log-common-errors=yes
 log-rpz-changes=yes
