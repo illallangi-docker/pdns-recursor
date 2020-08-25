@@ -2,7 +2,7 @@ FROM docker.io/fedora:31
 
 MAINTAINER Andrew Cole <andrew.cole@illallangi.com>
 
-RUN dnf -y install pdns-recursor which; \
+RUN dnf -y install bind-utils pdns-recursor which; \
     dnf -y update; \
     dnf -y clean all
 
